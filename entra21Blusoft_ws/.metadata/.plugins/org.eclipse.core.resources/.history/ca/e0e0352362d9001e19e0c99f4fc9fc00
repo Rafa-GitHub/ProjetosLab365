@@ -8,13 +8,15 @@ public class TesteAula {
 		
 		Scanner tc = new Scanner(System.in);
 		
-		System.out.print("Quantidade produtos: ");
+		String productName = "Caixa";
+		
+		System.out.print("quantidade produtos: ");
 		int productQuantity = tc.nextInt();
 		int op = -1;
 		
 		do {
-			System.out.printf("[ 1 ]Adicionar +1"
-					+ "\n[ 2 ]Remover -1\n[ 0 ]SAIR\n-> ");
+			System.out.printf("[ 1 ]Adicionar"
+					+ "\n[ 2 ]Remover\n[ 0 ]SAIR\n-> ");
 				op = tc.nextInt();
 			switch(op) {
 				case 0:

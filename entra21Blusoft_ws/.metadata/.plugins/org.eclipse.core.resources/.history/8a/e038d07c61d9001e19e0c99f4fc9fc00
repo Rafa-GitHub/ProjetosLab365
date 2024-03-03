@@ -8,17 +8,17 @@ public class TesteAula {
 		
 		Scanner tc = new Scanner(System.in);
 		
-		System.out.print("Quantidade produtos: ");
+		String productName = "Caixa";
+		
+		System.out.print("quantidade produtos: ");
 		int productQuantity = tc.nextInt();
 		int op = -1;
 		
 		do {
-			System.out.printf("[ 1 ]Adicionar +1"
-					+ "\n[ 2 ]Remover -1\n[ 0 ]SAIR\n-> ");
+			System.out.printf("[ 1 ]Adicionar"
+					+ "[ 2 ]Remover\n-> ");
 				op = tc.nextInt();
 			switch(op) {
-				case 0:
-					break;
 				case 1:
 					productQuantity += 1;
 					break;
@@ -28,9 +28,8 @@ public class TesteAula {
 				default:
 					System.out.println("Valor invalido!");
 			}
-			System.out.printf("%d produtos\n", productQuantity);
-		}while (productQuantity != 0 && op != 0);
-		System.out.println("Fim da execução.");
+			System.out.printf("%d produtos", productQuantity);
+		}while (productQuantity != 0 || op == 0);
 		
 		tc.close();
 	}
