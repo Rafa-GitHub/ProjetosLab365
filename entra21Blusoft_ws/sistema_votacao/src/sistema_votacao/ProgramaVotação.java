@@ -1,7 +1,6 @@
 package sistema_votacao;
 
 import java.util.Scanner;
-
 import entidades.Candidato;
 
 public class ProgramaVotação {
@@ -27,7 +26,6 @@ public class ProgramaVotação {
 			System.out.printf("---------------------------\n->");
 
 			op = tc.nextInt();
-
 			switch (op) {
 			case 0:
 				break;
@@ -68,10 +66,8 @@ public class ProgramaVotação {
 				op = 0;
 				break;
 			}
-
 		} while (op != 0);
 		System.out.println("\nFim da execução.");
 		tc.close();
 	}
-
 }
