@@ -1,9 +1,20 @@
 package aulasEntra21;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Listas {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		List <String> stringLista = new ArrayList<>();
+		
+		stringLista.add("Rafa");
+		stringLista.add("Lika");
+		stringLista.add("João");
+		
+		stringLista.forEach(System.out::println);
+		
 
 	}
 
