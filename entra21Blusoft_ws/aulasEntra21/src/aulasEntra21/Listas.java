@@ -37,7 +37,8 @@ public class Listas {
 		int primeiro = filaNumeros.peek();
 		System.out.println("1° elemento da fila: " + primeiro);
 		//------------------------------------------------------------------
-		
+		//Prioriry queue - ordem de prioridade, Por padrão, a ordem e a ordem natural, ou seja,
+		//ascendente ou alfabética,
 		PriorityQueue<Integer> integerQueue = new PriorityQueue<>();
 		integerQueue.add(9);
 		integerQueue.add(2);
@@ -48,6 +49,9 @@ public class Listas {
 		System.out.println("first:" + first);
 		System.out.println("second:" + second);
 		System.out.println("third:" + third);
+		//-------------------------------------------------------------------
+		
+		
 		
 		
 	}
