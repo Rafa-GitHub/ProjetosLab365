@@ -3,6 +3,7 @@ package aulasEntra21;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class Listas {
@@ -36,6 +37,18 @@ public class Listas {
 		int primeiro = filaNumeros.peek();
 		System.out.println("1° elemento da fila: " + primeiro);
 		//------------------------------------------------------------------
+		
+		PriorityQueue<Integer> integerQueue = new PriorityQueue<>();
+		integerQueue.add(9);
+		integerQueue.add(2);
+		integerQueue.add(4);
+		int first = integerQueue.poll();
+		int second = integerQueue.poll();
+		int third = integerQueue.poll();
+		System.out.println("first:" + first);
+		System.out.println("second:" + second);
+		System.out.println("third:" + third);
+		
 		
 	}
 
