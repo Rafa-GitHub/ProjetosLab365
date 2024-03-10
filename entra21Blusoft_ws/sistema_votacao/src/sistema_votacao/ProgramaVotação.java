@@ -6,6 +6,17 @@ import entidades.Candidato;
 public class ProgramaVotação {
 
 	public static void main(String[] args) {
+		
+		/* 1° O sistema exibirá na tela um menu com 4 opções de voto (4 candidatos), 
+		 * uma opção para mostrar o resultado e outra para sair da votação.
+		 * ​
+		 * 2° Após inserir um voto, o sistema exibe novamente o menu para que novos votos possam ser inseridos;​
+		 * 
+		 * 3° O sistema contará quantos votos cada candidato recebeu;​
+		 * 
+		 * 4° Ao entrar na opção de mostrar o resultado, o sistema mostrará quantos votos cada candidato recebeu e quem foi o vencedor.
+		 */
+		
 
 		Scanner tc = new Scanner(System.in);
 
