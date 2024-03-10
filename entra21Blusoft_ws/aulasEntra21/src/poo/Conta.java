@@ -5,18 +5,33 @@ public class Conta {
 	public String nomeTitular;
 	public int numConta;
 	private double saldo;
+	protected double taxaSaque = 0.0;
 	
 	public boolean depositar(double valor) {
-		return false;
+		this.saldo += valor;
+		return true;
 	}
 	public boolean sacar(double valor) {
-		return false;
+		if(valor + this.taxaSaque <= this.saldo) {
+			//permite saque
+			this.saldo = this.saldo - valor - taxaSaque;
+			return true;
+		}else {
+			//não permite saque
+			return false;
+		}
 	}
 	public boolean transferir(Conta contaDestino, double valor) {
-		return false;
+		if(this.sacar(valor) == true) {
+			contaDestino.depositar(valor);
+			return true;
+		}else {
+			return false;
+		}
+
 	}
 	public double getSaldo() {
-		return 0;
+		return this.saldo;
 	}
 	
 }
