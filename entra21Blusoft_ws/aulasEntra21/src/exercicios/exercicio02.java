@@ -16,7 +16,12 @@ public class exercicio02 {
 		c01.nome = "João";
 		c01.saldo = 100.0;
 		
-		System.out.printf("Cliente %s possui R$:%.2f de saldo na sua conta.", c01.nome, c01.saldo);
+		System.out.printf("Cliente %s possui R$:%.2f de saldo na sua conta.%n", c01.nome, c01.saldo);
+		
+		c01.sacar(50);
+		System.out.println("Saldo atual R$:" + c01.getSaldo());
+		c01.deposito(250);
+		System.out.println("Saldo atual R$:" + c01.getSaldo());
 		
 	}
 	
