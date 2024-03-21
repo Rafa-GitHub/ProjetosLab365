@@ -17,8 +17,8 @@ public class Matriz {
 		int mat[][] = new int[3][3];
 		int vetSoma[] = new int[3];
 
-		for (int i = 0; i < 3; i++) {
-			for (int j = 0; j < 3; j++) {
+		for (int i = 0; i < mat.length; i++) {
+			for (int j = 0; j < mat.length; j++) {
 				System.out.print("Linha " + (i + 1) + "/Coluna " + (j + 1) + ": ");
 				mat[i][j] = tc.nextInt();
 				vetSoma[j] += mat[i][j];
@@ -29,7 +29,7 @@ public class Matriz {
 		for (int i = 0; i < vetSoma.length; i++) {
 			System.out.println("Soma " + (i + 1) + "° Coluna: " + vetSoma[i]);
 		}
-
+		
 		tc.close();
 	}
 
