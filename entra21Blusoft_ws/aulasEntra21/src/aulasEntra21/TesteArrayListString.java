@@ -16,6 +16,7 @@ public class TesteArrayListString {
 			lista01.add(tc.nextLine());
 		}
 		
+		//lambda
 		lista01.forEach(nome -> {
 			if(nome.length() < 3) {
 				lista02.add(nome);
