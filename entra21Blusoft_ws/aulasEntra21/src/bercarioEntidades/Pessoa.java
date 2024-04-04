@@ -39,5 +39,13 @@ public abstract class Pessoa {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
+
+	@Override
+	public String toString() {
+		return String.format("Nome completo: %s\nEndereco: %s\nData de nascimento: %s ",
+				nomeCompleto, endereco, dataNascimento);
+	}
+	
+	
 	
 }
