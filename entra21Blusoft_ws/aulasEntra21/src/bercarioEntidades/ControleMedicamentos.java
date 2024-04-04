@@ -1,9 +1,11 @@
 package bercarioEntidades;
 
+import java.sql.Date;
+
 public class ControleMedicamentos {
 
-	public String descricao;
-	public int qtdEstoque;
-	public String unidadeMedida;
+	private Date dataHora;
+	private Medicamento medicamento;
+	private Bebe bebe;
 	
 }
