@@ -8,7 +8,7 @@ public class Exercicio01 {
 		
 		Scanner tc = new Scanner(System.in);
 		
-		int n1 = tc.nextInt();
+		/*int n1 = tc.nextInt();
 		int n2 = tc.nextInt();
 		int n3 = tc.nextInt();
 		int maior = n1;
@@ -20,7 +20,16 @@ public class Exercicio01 {
 			System.out.println("Maior: " + n3);
 		}else {
 			System.out.println("Maior: " + maior);
-		}
+		}*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		tc.close();
 	}
 
